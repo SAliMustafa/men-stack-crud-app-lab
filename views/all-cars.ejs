@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+    <h1>All Available Cars</h1>
+    <% for (let i of cars){ %>
+    <p>Brand: <%= i.brand %></p>
+    <p>Model: <%= i.model %></p>
+    <p>Production Year: <%= i.year %></p>
+    <a href="/cars/<%=i.id%>">See Car Details</a>
+    <%}%>
+</body>
+</html>

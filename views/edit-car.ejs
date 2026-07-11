@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Car</h1>
+    <form action="/cars/<%=car._id%>?_method=PUT" method="post">
+        <label for="brand">Car Brand</label>
+        <input value="<%=car.brand%>" name="brand" id="brand"type="text">
+        <br>
+        <br>
+        <label for="model">Car Model</label>
+        <input value="<%=car.model%>" name="model" id="model"type="text">
+        <br>
+        <br>
+        <label for="year">Car Year</label>
+        <input value="<%=car.year%>" name="year" id="year"type="Number">
+        <br>
+        <br>
+        <label for="price">Car Price (in BHD)</label>
+        <input value="<%=car.price%>" name="price" id="price"type="number">
+        <br>
+        <br>
+
+        <label for="engineSize">Engine Size</label>
+        <input value="<%=car.engineSize%>" name="engineSize" id="engineSize" type="number">
+        <br>
+        <br>
+        <label for="isItAutomatic">Does it have an automatic transmission?</label>
+        <input <%if(car.isItAutomatic){%> checked <%}%> name="isItAutomatic" id="isItAutomatic" type="checkbox">
+        <br>
+        <br>
+        <button>Update Car</button>
+    </form>
+</body>
+</html>
