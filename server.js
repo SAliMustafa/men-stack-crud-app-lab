@@ -80,8 +80,8 @@ app.get('/cars', async (req,res)=>{
 })
 
 app.get('/cars/:id', async (req,res)=>{
-    const foundCar = await Car.findById(req.params.id)
-    res.render('car_details.ejs', {car: foundCar})
+     const foundCar = await Car.findById(req.params.id)
+     res.render('car_details.ejs', {car: foundCar})
 })
 
 app.get('/cars/:id/edit', async (req,res)=>{

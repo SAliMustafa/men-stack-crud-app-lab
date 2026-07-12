@@ -1,0 +1,40 @@
+body{
+    background-color: #000022;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+nav{
+    background-color: aliceblue;
+    min-height: 30px;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+
+}
+nav a{
+    text-decoration: none;
+    color: #000022;
+    margin: 25px;
+}
+input{
+    width: 60%;
+    background-color: aliceblue;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+label{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+button{
+    border-radius: 6px;
+}

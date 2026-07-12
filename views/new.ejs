@@ -4,33 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <%- include('./partials/navbar') %>
     <h1>Add a Car</h1>
     <form action="/cars" method="post">
         <label for="brand">Car Brand</label>
+        <br>
         <input name="brand" id="brand"type="text">
         <br>
         <br>
         <label for="model">Car Model</label>
+        <br>
         <input name="model" id="model"type="text">
         <br>
         <br>
         <label for="year">Car Year</label>
+        <br>
         <input name="year" id="year"type="Number">
         <br>
         <br>
         <label for="price">Car Price (in BHD)</label>
+        <br>
         <input name="price" id="price"type="number">
         <br>
         <br>
 
         <label for="engineSize">Engine Size</label>
+        <br>
         <input name="engineSize" id="engineSize" type="number">
         <br>
         <br>
         <label for="isItAutomatic">Does it have an automatic transmission?</label>
+        <br>
         <input name="isItAutomatic" id="isItAutomatic" type="checkbox">
         <br>
         <br>
